@@ -1,0 +1,19 @@
+{
+	"author": "Rudolph-Miller",
+		"name": "log-emitter",
+		"description": "log emitter",
+		"repository": {
+			"type": "git",
+			"url": "git://github.com/Rudolph-Miller/node-log-emitter"
+		},
+		"main": "tail-watcher",
+		"engines": {
+			"node":"*"
+		},
+		"dependencies": {},
+		"devDependencies": {
+			"coffee-script":"*",
+			"aws-sdk": "*",
+			"request": "*"
+		}
+}
