@@ -1,19 +1,21 @@
 {
 	"author": "Rudolph-Miller",
-		"name": "log-emitter",
-		"description": "log emitter",
-		"repository": {
-			"type": "git",
-			"url": "git://github.com/Rudolph-Miller/node-log-emitter"
-		},
-		"main": "tail-watcher",
-		"engines": {
-			"node":"*"
-		},
-		"dependencies": {},
-		"devDependencies": {
-			"coffee-script":"*",
-			"aws-sdk": "*",
-			"request": "*"
-		}
+	"name": "log-emitter",
+	"version": "1.0.0",
+	"keywords": ["tail", "log"],
+	"description": "log emitter",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/Rudolph-Miller/node-log-emitter"
+	},
+	"scripts": {
+		"prepublish": "coffee -o lib/ -c src/*.coffee",
+		"build": "coffee -o lib/ -c src/*.coffee"
+	},
+	"main": "lib/log-emitter.js",
+	"engines": {
+		"node":"*"
+	},
+	"dependencies": { "tail-watcher": "*" },
+	"devDependencies": {"coffee-script":"*"}
 }
