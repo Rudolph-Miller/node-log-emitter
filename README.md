@@ -6,11 +6,13 @@ author: Rudolph-Miller
 
 How to Use
 ```
-	LogEmitter = require('log-emitter').LogEmitter('*watching-file*')
+	logemitter = require('log-emitter').LogEmitter
+	LogEmitter = new logemitter('*watching-file*)
 	LogEmitter.use *function*
 		-> when file changed and do *function*({file: *file-name*, data: *data*})
 
-	FolderLogEmitter= require('log-emitter').FolderLogEmitter('*watching-folder*')
-	LogEmitter.use *function*
+	folderlogemitter= require('log-emitter').FolderLogEmitter
+	FolderLogEmitter = new folderlogemitter('*watcher-folder*')
+	FolderLogEmitter.use *function*
 		-> when file in folder changed and do *function*({file: *file-name*, data: *data*})
 ```
